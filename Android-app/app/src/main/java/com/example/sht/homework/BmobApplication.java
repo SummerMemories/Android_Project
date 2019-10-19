@@ -4,14 +4,11 @@ import android.app.Application;
 
 import cn.bmob.v3.Bmob;
 
-/**
- * @author zhangchaozhou
- */
 public class BmobApplication extends Application {
 
 
 
-    public static String APPID = "bd4814e57ed9c8f00aa0d119c5676cf9";
+    public static String APPID = "cfe626e0da30bcf9ec88ee6ba3f3c78f";
 
     @Override
     public void onCreate() {
@@ -34,7 +31,5 @@ public class BmobApplication extends Application {
 //		Bmob.resetDomain("http://open-vip.bmob.cn/8/");
 //		StrictMode.setThreadPolicy(new StrictMode.ThreadPolicy.Builder().detectAll().penaltyLog().build());
 //		StrictMode.setVmPolicy(new StrictMode.VmPolicy.Builder().detectAll().penaltyLog().build());
-
-
     }
 }

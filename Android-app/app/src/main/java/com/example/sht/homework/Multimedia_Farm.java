@@ -73,6 +73,5 @@ public class Multimedia_Farm extends Fragment {
 
         });
 //        webView.setInitialScale(70);
-
     }
 }

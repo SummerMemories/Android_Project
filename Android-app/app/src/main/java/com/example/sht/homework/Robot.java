@@ -1,6 +1,7 @@
 package com.example.sht.homework;
 
 public class Robot {
+
     private int code; // code码
     private String text; // 信息
 

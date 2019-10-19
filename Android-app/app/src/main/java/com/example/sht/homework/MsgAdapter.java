@@ -33,7 +33,6 @@ public class MsgAdapter extends RecyclerView.Adapter<MsgAdapter.ViewHolder>{
         }
     }
 
-
     public MsgAdapter(List<Msg> msgList){
         mMsgList = msgList;
 

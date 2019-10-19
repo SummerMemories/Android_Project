@@ -58,6 +58,5 @@ public class JingDong extends Fragment {
             }
 
         });
-
     }
 }

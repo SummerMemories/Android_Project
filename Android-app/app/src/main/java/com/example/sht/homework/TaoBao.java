@@ -60,6 +60,5 @@ public class TaoBao extends Fragment {
             }
 
         });
-
     }
 }

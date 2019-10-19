@@ -54,6 +54,5 @@ public class Pexels extends AppCompatActivity {
 
         });
         webView.setInitialScale(70);
-
     }
 }

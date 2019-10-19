@@ -165,5 +165,4 @@ public class MobileLoad extends AppCompatActivity implements View.OnClickListene
             }
         }
     };
-
 }

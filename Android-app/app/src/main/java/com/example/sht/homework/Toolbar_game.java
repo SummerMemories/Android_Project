@@ -50,7 +50,6 @@ public class Toolbar_game extends AppCompatActivity {
 
         });
         webView.setInitialScale(70);
-
     }
 }
 

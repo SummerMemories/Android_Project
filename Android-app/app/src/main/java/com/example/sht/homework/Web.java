@@ -21,6 +21,5 @@ public class Web extends AppCompatActivity {
         String name = intent.getStringExtra("name");
         URI = "https://m.baidu.com/s?tn=80035161_2_dg&wd=" + name ;
         webView.loadUrl(URI);
-        
     }
 }

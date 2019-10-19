@@ -53,6 +53,5 @@ public class Microsoft extends AppCompatActivity {
 
         });
         webView.setInitialScale(70);
-
     }
 }

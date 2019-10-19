@@ -34,8 +34,6 @@ import java.util.List;
 
 public class Find extends Fragment {
 
-
-
         public int time=3000;
 
         private List<Class_Environment> worldList = new ArrayList<>();
@@ -49,7 +47,6 @@ public class Find extends Fragment {
         return inflater.inflate(R.layout.activity_find
                 , container, false);
     }
-
 
     public void onViewCreated(View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
@@ -102,8 +99,6 @@ public class Find extends Fragment {
             }
         });
         w.setScaleType(ImageView.ScaleType.CENTER_INSIDE);
-
-
 
         ImageButton q1 = (ImageButton) getActivity().findViewById(R.id.find_51cto);
         q1.setOnClickListener(new View.OnClickListener() {
@@ -180,15 +175,11 @@ public class Find extends Fragment {
                 view.setScaleType(ImageView.ScaleType.CENTER_CROP);
                 view.setLayoutParams(new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT));
                 return view;
-
             }
 
             @Override
             public int getCount() {
                 return imgs.length;
             }
-
         }
-
-
 }

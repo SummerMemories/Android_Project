@@ -49,6 +49,5 @@ public class Toolbar_eat extends AppCompatActivity {
             }
 
         });
-
     }
 }

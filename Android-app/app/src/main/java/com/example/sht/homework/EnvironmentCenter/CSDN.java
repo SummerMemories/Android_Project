@@ -55,6 +55,5 @@ public class CSDN extends AppCompatActivity {
 
         });
         webView.setInitialScale(70);
-
     }
 }

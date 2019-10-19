@@ -52,6 +52,5 @@ public class NanFangZhouMo extends AppCompatActivity {
             }
 
         });
-
     }
 }

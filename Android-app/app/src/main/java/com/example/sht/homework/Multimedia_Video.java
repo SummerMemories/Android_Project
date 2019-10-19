@@ -59,6 +59,5 @@ public class Multimedia_Video extends Fragment {
             }
 
         });
-
     }
 }

@@ -23,7 +23,6 @@ import android.webkit.WebViewClient;
 public class Chat extends Fragment {
 
     @Nullable
-
 //    WebView webView;
 //    private long exitTime = 0;
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {

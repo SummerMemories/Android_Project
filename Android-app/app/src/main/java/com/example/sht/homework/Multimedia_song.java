@@ -35,7 +35,6 @@ import java.util.List;
 
 public class Multimedia_song extends Fragment {
 
-
     @Nullable
     WebView webView;
     private long exitTime = 0;
@@ -175,5 +174,4 @@ public class Multimedia_song extends Fragment {
 //        }
 //
 //    }
-
 }

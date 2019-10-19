@@ -18,24 +18,18 @@ public class RegistActivity extends AppCompatActivity implements View.OnClickLis
     EditText et_regist_password;
     Button bt_regist_save,bt_regist_cancel;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_regist);
-        Bmob.initialize(this, "bd4814e57ed9c8f00aa0d119c5676cf9");
+        Bmob.initialize(this, "cfe626e0da30bcf9ec88ee6ba3f3c78f");
         et_regist_user= (EditText)findViewById(R.id.et_regist_user);
         et_regist_password= (EditText) findViewById(R.id.et_regist_password);
         bt_regist_save= (Button) findViewById(R.id.bt_regist_save);
         bt_regist_cancel= (Button) findViewById(R.id.bt_regist_cancel);
         bt_regist_save.setOnClickListener(this);
         bt_regist_cancel.setOnClickListener(this);
-
-
-
-
-
     }
 
     @Override
@@ -60,7 +54,7 @@ public class RegistActivity extends AppCompatActivity implements View.OnClickLis
                             Toast.makeText(RegistActivity.this, "注册成功", Toast.LENGTH_SHORT).show();
                         }else{
                             //loge(e);
-                            Toast.makeText(RegistActivity.this, "注册失败", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(RegistActivity.this, "注册失败" + e.getMessage(), Toast.LENGTH_SHORT).show();
                         }
                     }
                 });

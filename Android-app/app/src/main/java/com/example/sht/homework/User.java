@@ -21,7 +21,4 @@ public class User extends BmobUser {
         public void setAddress(String address) {
             this.address = address;
         }
-
-
-
 }

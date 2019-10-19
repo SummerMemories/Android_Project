@@ -43,7 +43,7 @@ public class StartActivity extends AppCompatActivity implements View.OnClickList
         }
 
         setContentView(R.layout.activity_start);
-        Bmob.initialize(this, "bd4814e57ed9c8f00aa0d119c5676cf9");
+        Bmob.initialize(this, "cfe626e0da30bcf9ec88ee6ba3f3c78f");
 
         tv_regist = (TextView) findViewById(R.id.tv_regist);
         bt_login = (Button) findViewById(R.id.login);
@@ -53,7 +53,6 @@ public class StartActivity extends AppCompatActivity implements View.OnClickList
         tv_regist.setOnClickListener(StartActivity.this);
         bt_login.setOnClickListener(StartActivity.this);
         bt_mobile_login.setOnClickListener(StartActivity.this);
-
     }
 
 
@@ -100,14 +99,7 @@ public class StartActivity extends AppCompatActivity implements View.OnClickList
                         }
                     }
                 });
-
                 break;
         }
     }
-
-    /**
-     * ATTENTION: This was auto-generated to implement the App Indexing API.
-     * See https://g.co/AppIndexing/AndroidStudio for more information.
-     */
-
 }

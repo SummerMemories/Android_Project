@@ -92,8 +92,6 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-
-
         ImageButton q1 = (ImageButton) findViewById(R.id.search);
         q1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -161,5 +159,4 @@ public class MainActivity extends AppCompatActivity {
     public void onDestroy(){
         super.onDestroy();
     }
-
 }
