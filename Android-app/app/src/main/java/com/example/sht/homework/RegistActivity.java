@@ -16,6 +16,7 @@ import cn.bmob.v3.listener.SaveListener;
 public class RegistActivity extends AppCompatActivity implements View.OnClickListener {
     EditText et_regist_user;
     EditText et_regist_password;
+    EditText et_regist_password_confirm;
     Button bt_regist_save,bt_regist_cancel;
 
     @Override
@@ -24,10 +25,11 @@ public class RegistActivity extends AppCompatActivity implements View.OnClickLis
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_regist);
         Bmob.initialize(this, "cfe626e0da30bcf9ec88ee6ba3f3c78f");
-        et_regist_user= (EditText)findViewById(R.id.et_regist_user);
-        et_regist_password= (EditText) findViewById(R.id.et_regist_password);
-        bt_regist_save= (Button) findViewById(R.id.bt_regist_save);
-        bt_regist_cancel= (Button) findViewById(R.id.bt_regist_cancel);
+        et_regist_user = (EditText)findViewById(R.id.et_regist_user);
+        et_regist_password = (EditText) findViewById(R.id.et_regist_password);
+        et_regist_password_confirm = (EditText) findViewById(R.id.et_regist_password_confirm);
+        bt_regist_save = (Button) findViewById(R.id.bt_regist_save);
+        bt_regist_cancel = (Button) findViewById(R.id.bt_regist_cancel);
         bt_regist_save.setOnClickListener(this);
         bt_regist_cancel.setOnClickListener(this);
     }
@@ -36,11 +38,16 @@ public class RegistActivity extends AppCompatActivity implements View.OnClickLis
     public void onClick(View v) {
         switch(v.getId()){
             case R.id.bt_regist_save:
-                String user_num=et_regist_user.getText().toString();
-                String user_password=et_regist_password.getText().toString().trim();
+                String user_num = et_regist_user.getText().toString();
+                String user_password = et_regist_password.getText().toString().trim();
+                String user_password_confirm = et_regist_password_confirm.getText().toString().trim();
                 // 非空验证
-                if (user_num.isEmpty() || user_password.isEmpty()) {
+                if (user_num.isEmpty() || user_password.isEmpty() || user_password_confirm.isEmpty()) {
                     Toast.makeText(RegistActivity.this, "账号或密码不能为空", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+                if(!user_password.equals(user_password_confirm)){
+                    Toast.makeText(RegistActivity.this, "密码不一致", Toast.LENGTH_SHORT).show();
                     return;
                 }
                 // 使用BmobSDK提供的注册功能

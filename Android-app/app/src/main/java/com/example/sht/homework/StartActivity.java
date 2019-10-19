@@ -13,7 +13,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 
-import com.example.sht.homework.MobileLoad.MobileLoad;
+//import com.example.sht.homework.MobileLoad.MobileLoad;
 
 import cn.bmob.v3.Bmob;
 import cn.bmob.v3.BmobUser;
@@ -64,10 +64,12 @@ public class StartActivity extends AppCompatActivity implements View.OnClickList
                 Intent intent_regist = new Intent(StartActivity.this, RegistActivity.class);
                 startActivity(intent_regist);
                 break;
+                /*
             case R.id.monile_login:
                 Intent intent_mobile = new Intent(StartActivity.this, MobileLoad.class);
                 startActivity(intent_mobile);
                 break;
+                */
             case R.id.login:
                 String user_num = et_login_user.getText().toString();
                 String user_password = et_login_password.getText().toString().trim();

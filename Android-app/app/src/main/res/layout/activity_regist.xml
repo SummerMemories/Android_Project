@@ -15,7 +15,9 @@
         android:hint="用户名"
         tools:layout_editor_absoluteX="81dp"
         tools:layout_editor_absoluteY="226dp"
-        android:textColorHint="#bfffffff" />
+        android:textColorHint="#bfffffff"
+        android:textColor="#ffffffff"
+        android:lines="1"/>
 
     <EditText
         android:id="@+id/et_regist_password"
@@ -23,11 +25,29 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="208dp"
+        android:layout_marginBottom="260dp"
         android:hint="密码"
         tools:layout_editor_absoluteX="82dp"
         tools:layout_editor_absoluteY="157dp"
-        android:textColorHint="#bfffffff" />
+        android:textColorHint="#bfffffff"
+        android:textColor="#ffffffff"
+        android:inputType="textPassword"
+        android:lines="1"/>
+
+    <EditText
+        android:id="@+id/et_regist_password_confirm"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="208dp"
+        android:hint="确认密码"
+        tools:layout_editor_absoluteX="82dp"
+        tools:layout_editor_absoluteY="157dp"
+        android:textColorHint="#bfffffff"
+        android:textColor="#ffffffff"
+        android:inputType="textPassword"
+        android:lines="1"/>
 
     <Button
         android:id="@+id/bt_regist_save"

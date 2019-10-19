@@ -75,7 +75,3 @@ public class Class_Environment_Adapter extends RecyclerView.Adapter<Class_Enviro
         return mWorldList.size();
     }
 }
-
-
-
-
